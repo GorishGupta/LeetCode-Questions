@@ -3,7 +3,6 @@ class Solution {
             if (nums == null || nums.length < k) {
             return new int[0];
         }
-
         int arr[]=new int[nums.length-k+1];
         int i=0;
         int j=k-1;
@@ -20,9 +19,7 @@ class Solution {
             a++;
         }
         return arr;
-        
     }
-
     private boolean solved(int nums[],int start,int end){
         for(int i=start;i<end;i++){
             if(nums[i]+1!=nums[i+1]){
