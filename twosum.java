@@ -3,6 +3,10 @@ public class twosum {
         int x = 5;
         char y ='c';
         char z = 'z';
-                System.out.println(x+y+z);
+        System.out.println(x+y+z);
+        int x1 = 5;
+        char y2 ='c';
+        char z3 = 'z';
+        System.out.println(x+y+z);
     }
 }
