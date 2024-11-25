@@ -1,3 +1,4 @@
+import java.util.*;
 class Solution {
     public int slidingPuzzle(int[][] board) {
         int m = 2, n = 3;
