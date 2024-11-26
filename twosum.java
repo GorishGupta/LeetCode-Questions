@@ -10,6 +10,7 @@ public class twosum {
         char y9 ='c';
         char z8 = 'z';
         System.out.println(x+y+z);
+        System.out.println("hell No");
     }
 }
  
