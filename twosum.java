@@ -12,3 +12,4 @@ public class twosum {
         System.out.println(x+y+z);
     }
 }
+ 
