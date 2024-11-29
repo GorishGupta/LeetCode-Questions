@@ -14,7 +14,7 @@ class Solution {
 
         while (!q.isEmpty()) {
             int node = q.poll();
-            if (node == n - 1) {
+            if (node == n - 1) { 
                 return dist[node];
             }
             for (int neighbor : graph.get(node)) {
@@ -27,7 +27,6 @@ class Solution {
         }
         return -1;
     }
-
     public int[] shortestDistanceAfterQueries(int n, int[][] queries) {
         graph = new ArrayList<>();
         for (int i = 0; i < n; i++) {
