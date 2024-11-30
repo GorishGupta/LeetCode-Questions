@@ -82,6 +82,7 @@ class Solution {
             graph.get(query[0]).add(new int[]{query[1], 1});
             res.add(dijkstra(n));
         }
+        System.out.println();
         return res.stream().mapToInt(i -> i).toArray();
     }
 }
