@@ -83,6 +83,7 @@ class Solution {
             res.add(dijkstra(n));
         }
         System.out.println();
+        System.out.println();
         return res.stream().mapToInt(i -> i).toArray();
     }
 }
