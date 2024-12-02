@@ -15,7 +15,7 @@ class Solution {
 
         Queue<String> q = new LinkedList<>();
         q.offer(start);
-
+ 
         // index at 0 can swap with index at 1 and 3
         int[][] swaps = new int[][] {
             {1, 3}, 

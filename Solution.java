@@ -5,7 +5,6 @@ public class Solution {
                 if(i!=j &&  0<=i && j<arr.length && arr[i] == 2*arr[j] ){
                         return true;
                 }
-                
             }
         }
         return false;
