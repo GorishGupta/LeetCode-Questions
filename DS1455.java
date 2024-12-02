@@ -37,3 +37,15 @@ class Solution {
        return false;
     }
 }
+//2255
+class Solution {
+    public int countPrefixes(String[] words, String s) {
+        int count= 0;
+        for(String sd : words){
+            if(s.startsWith(sd)){
+                count++;
+            }
+        }
+        return count;
+    }
+}
