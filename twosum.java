@@ -11,11 +11,6 @@ public class twosum {
        // char z8 = 'z';
         System.out.println("->"+x+y+z+"<-");
         System.out.println("hell No");
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        System.out.println();
-
     }
 }
  
