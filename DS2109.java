@@ -17,6 +17,7 @@ class Solution {
             idx++;
             c++;
         }
+        System.out.println();
         return new String(charr);
     }
 
