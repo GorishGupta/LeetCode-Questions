@@ -13,6 +13,8 @@ public class twosum {
         System.out.println("hell No");
         System.out.println();
         System.out.println();
+        System.out.println();
+        System.out.println();
 
     }
 }
