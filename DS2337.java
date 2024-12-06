@@ -35,7 +35,7 @@ class Solution {
                 waitL--;
             }
         }
-        
+        System.out.println();
         return waitL == 0 && waitR == 0;
     }
 }
