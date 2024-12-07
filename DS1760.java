@@ -16,6 +16,7 @@ class Solution {
             }
         }
         System.out.println();
+        System.out.println();
         return max;
     }
 }
