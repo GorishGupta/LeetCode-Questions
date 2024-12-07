@@ -15,6 +15,7 @@ class Solution {
                 min = mid;
             }
         }
+        System.out.println();
         return max;
     }
 }
