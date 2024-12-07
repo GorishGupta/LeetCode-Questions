@@ -15,14 +15,6 @@ class Solution {
                 min = mid;
             }
         }
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        System.out.println();
         return max;
     }
 }
