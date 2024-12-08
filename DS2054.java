@@ -15,6 +15,7 @@ class Solution {
             ans = Math.max(ans, max + events[i][2]);
             pq.offer(events[i]);
         }
+        System.out.println();
 
         return ans;
     } 
