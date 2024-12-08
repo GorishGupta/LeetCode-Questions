@@ -18,14 +18,4 @@ class Solution {
 
         return ans;
     } 
-    ublic int maxTwoEvents(int[][] events) {
-        Arrays.sort(events, (a, b) -> (a[0] == b[0] ? a[1] - b[1] : a[0] - b[0]));
-        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[1] - b[1]);
-
-        pq.offer(events[0]);
-        int max = 0;
-        int ans = 0;
-
-        return ans;
-    } 
 }
