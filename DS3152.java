@@ -11,6 +11,7 @@ class Solution {
         }
         for(int i=0;i<queries.length;i++){
             ans[i] = (converted[queries[i][0]] == converted[queries[i][1]]);
+            System.out.println();
         }
         return ans;
     }
