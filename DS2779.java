@@ -14,7 +14,9 @@ class Solution {
     //inbuild sorting
    // Arrays.sort(nums);   
      Arrays.sort(nums);
-        int i=0,j,n= nums.length;
+        int i=0;
+        int j;
+        int n= nums.length;
         for(j=0;j<n;j++){
             if(nums[j] - nums[i] > k*2){
                 i++;
