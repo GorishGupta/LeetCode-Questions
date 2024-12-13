@@ -15,6 +15,6 @@ class Solution {
         while(!q.isEmpty()){
             s += q.poll();
         }
-        return s;
+        return s;   
     }
 }
