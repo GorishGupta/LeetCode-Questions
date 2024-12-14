@@ -17,8 +17,6 @@ class DS2762 {
             }         
             count += right - left + 1;
             right++;
-            System.out.println();
-            System.out.println();
         }
         return count;
     }
