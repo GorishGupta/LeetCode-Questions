@@ -7,7 +7,7 @@ class Solution {
         for(int i=0;i<n;i++){
             arr[s.charAt(i) - 'a']++;
         }
-
+        System.out.println();
         for(int i=25;i>=0;i--){
             if(arr[i]==0){
                 continue;
@@ -31,7 +31,7 @@ class Solution {
                 }
             } 
         }
-        
+        System.out.println();
         return sb.toString();
     }
 }
