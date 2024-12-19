@@ -1,5 +1,6 @@
 class Solution {
     public int maxChunksToSorted(int[] arr) {
+        
         int n = arr.length;
 
         int prefixMax [] = arr.clone();
@@ -14,7 +15,7 @@ class Solution {
         } 
 
         int chunks = 0;
-        
+
         for(int i=0;i<n;i++){
             if(i==0 || suffixMin[i] > prefixMax[i-1]){
                 chunks++;
