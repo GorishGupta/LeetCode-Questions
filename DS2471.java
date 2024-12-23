@@ -1,5 +1,5 @@
-class Solution {
-
+import java.util.*;
+class DS2471 {
     public int minimumOperations(TreeNode root) {
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
