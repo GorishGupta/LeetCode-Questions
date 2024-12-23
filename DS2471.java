@@ -4,7 +4,6 @@ class DS2471 {
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
         int totalSwaps = 0;
-
         while (!queue.isEmpty()) {
             int levelSize = queue.size();
             int[] levelValues = new int[levelSize];
@@ -12,11 +11,9 @@ class DS2471 {
             for (int i = 0; i < levelSize; i++) {
                 TreeNode node = queue.poll();
                 levelValues[i] = node.val;
-
                 if (node.left != null) queue.add(node.left);
                 if (node.right != null) queue.add(node.right);
             }
-
             totalSwaps += getMinSwaps(levelValues);
         }
         return totalSwaps;
@@ -25,7 +22,6 @@ class DS2471 {
         int swaps = 0;
         int[] target = original.clone();
         Arrays.sort(target);
-
         Map<Integer, Integer> pos = new HashMap<>();
         for (int i = 0; i < original.length; i++) {
             pos.put(original[i], i);
