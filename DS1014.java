@@ -1,3 +1,4 @@
+import java.util.*;
 class DS1014{
 		public int maxScoreSightseeingPair(int[] a){
 			int ans = Integer.MIN_VALUE;
