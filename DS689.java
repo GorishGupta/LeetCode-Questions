@@ -25,7 +25,6 @@ class Solution {
         int doubleStartIndex = k + 1;
         int tripleStartIndex = k * 2 + 1;
         while (tripleStartIndex <= nums.length - k) {
-            // Update the sums using the sliding window technique
             currentWindowSumSingle =
                 currentWindowSumSingle -
                 nums[singleStartIndex - 1] +
@@ -38,35 +37,25 @@ class Solution {
                 currentWindowSumTriple -
                 nums[tripleStartIndex - 1] +
                 nums[tripleStartIndex + k - 1];
-
-            // Update the best single subarray start index if a better sum is found
             if (currentWindowSumSingle > bestSingleSum) {
                 bestSingleStart = singleStartIndex;
                 bestSingleSum = currentWindowSumSingle;
             }
-
-            // Update the best double subarray start indices if a better sum is found
             if (currentWindowSumDouble + bestSingleSum > bestDoubleSum) {
                 bestDoubleStart[0] = bestSingleStart;
                 bestDoubleStart[1] = doubleStartIndex;
                 bestDoubleSum = currentWindowSumDouble + bestSingleSum;
             }
-
-            // Update the best triple subarray start indices if a better sum is found
             if (currentWindowSumTriple + bestDoubleSum > bestTripleSum) {
                 bestTripleStart[0] = bestDoubleStart[0];
                 bestTripleStart[1] = bestDoubleStart[1];
                 bestTripleStart[2] = tripleStartIndex;
                 bestTripleSum = currentWindowSumTriple + bestDoubleSum;
             }
-
-            // Move the sliding windows forward
             singleStartIndex += 1;
             doubleStartIndex += 1;
             tripleStartIndex += 1;
         }
-
-        // Return the starting indices of the three subarrays with the maximum sum
         return bestTripleStart;
     }
 }
