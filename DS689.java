@@ -7,31 +7,23 @@ class Solution {
         for (int i = 0; i < k; i++) {
             currentWindowSumSingle += nums[i];
         }
-
         int currentWindowSumDouble = 0;
         for (int i = k; i < k * 2; i++) {
             currentWindowSumDouble += nums[i];
         }
-
         int currentWindowSumTriple = 0;
         for (int i = k * 2; i < k * 3; i++) {
             currentWindowSumTriple += nums[i];
         }
-
-        // Track the best sums found so far
         int bestSingleSum = currentWindowSumSingle;
         int bestDoubleSum = currentWindowSumSingle + currentWindowSumDouble;
         int bestTripleSum =
             currentWindowSumSingle +
             currentWindowSumDouble +
             currentWindowSumTriple;
-
-        // Sliding window pointers for the subarrays
         int singleStartIndex = 1;
         int doubleStartIndex = k + 1;
         int tripleStartIndex = k * 2 + 1;
-
-        // Slide the windows across the array
         while (tripleStartIndex <= nums.length - k) {
             // Update the sums using the sliding window technique
             currentWindowSumSingle =
