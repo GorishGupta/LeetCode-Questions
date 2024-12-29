@@ -9,7 +9,6 @@ class Solution {
             for (int i = 0; i < m; i++) {
                 count[i][word.charAt(i) - 'a']++;
             }
-            
         }
         int idx = target.charAt(0) - 'a';
         for (int i = 0; i < m; i++) {
