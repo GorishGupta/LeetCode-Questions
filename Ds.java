@@ -45,10 +45,10 @@ class Solution {
 }
 */class Solution {
     private List<List<int[]>> graph;
-
     private int dijkstra(int n) {
         int[] dist = new int[n];
         Arrays.fill(dist, Integer.MAX_VALUE);
+        int fill   = 
         dist[0] = 0;
         PriorityQueue<int[]> pq = new PriorityQueue<>(Comparator.comparingInt(a -> a[0]));
         pq.offer(new int[]{0, 0});
@@ -68,7 +68,6 @@ class Solution {
         }
         return dist[n - 1];
     }
-
     public int[] shortestDistanceAfterQueries(int n, int[][] queries) {
         graph = new ArrayList<>();
         for (int i = 0; i < n; i++) {
@@ -82,14 +81,6 @@ class Solution {
             graph.get(query[0]).add(new int[]{query[1], 1});
             res.add(dijkstra(n));
         }
-        System.out.println();
-        System.out.println();
-        
-        System.out.println();
-        System.out.println();
-        
-        System.out.println();
-        System.out.println();
         return res.stream().mapToInt(i -> i).toArray();
     }
 }
