@@ -43,7 +43,8 @@ class Solution {
         return res.stream().mapToInt(i -> i).toArray();
     }
 }
-*/class Solution {
+*/
+class Solution {
     private List<List<int[]>> graph;
     private int dijkstra(int n) {
         int[] dist = new int[n];
