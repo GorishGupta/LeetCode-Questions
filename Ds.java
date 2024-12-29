@@ -48,7 +48,6 @@ class Solution {
     private int dijkstra(int n) {
         int[] dist = new int[n];
         Arrays.fill(dist, Integer.MAX_VALUE);
-        int fill   = 
         dist[0] = 0;
         PriorityQueue<int[]> pq = new PriorityQueue<>(Comparator.comparingInt(a -> a[0]));
         pq.offer(new int[]{0, 0});
