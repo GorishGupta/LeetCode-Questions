@@ -1,4 +1,4 @@
-class Solution {
+class DS2466 {
     public int countGoodStrings(int low, int high, int zero, int one) {
         int[] dp = new int[high + 1];
         dp[0] = 1;
@@ -17,6 +17,7 @@ class Solution {
             answer += dp[i];
             answer %= mod;
         }
+        System.out.println();
         return answer;
     }
 }
